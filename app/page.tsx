@@ -80,7 +80,7 @@ export default function Home() {
         <div className="section-kicker">05 / UMC MOMENTS</div>
         <div className="section-title-row"><h2>배움보다 오래 남는<br />우리의 순간들.</h2><p>학교 안에서 시작해 전국의 챌린저와 연결되고,<br />함께 만든 것을 무대 위에 올립니다.</p></div>
         <div className="event-grid">{events.map((event, index) => <article className={`event-card event-${index + 1}`} key={event.title}><div className={`event-image ${event.extraImage ? "dual" : ""}`}><img src={event.image} alt={`${event.title} 현장 사진 1`} loading="lazy" />{event.extraImage && <img src={event.extraImage} alt={`${event.title} 현장 사진 2`} loading="lazy" />}<span>{event.label}</span></div><div className="event-body"><span>0{index + 1}</span><div><h3>{event.title}</h3><p>{event.body}</p></div></div></article>)}</div>
-        <div className="more-events"><b>그 외 활동들</b><span>연합 네트워킹 데이</span><span>너디너리 해커톤</span><span>UMC 해커톤</span><span>스터디</span><a href="https://www.instagram.com/uni_makeus_challenge/" target="_blank" rel="noreferrer">UMC 공식 인스타그램 보기 ↗</a></div>
+        <div className="more-events"><b>그 외 활동들</b><span>연합 네트워킹 데이</span><span>너디너리 해커톤</span><span>UMC 해커톤</span><span>스터디</span><a href="https://www.instagram.com/uni_makeus_challenge/" target="_blank" rel="noreferrer">UMC 공식 인스타그램 보기 ↗</a><a href="https://www.instagram.com/kau_makeus_challenge/" target="_blank" rel="noreferrer">한국항공대학교 UMC 인스타그램 ↗</a></div>
       </section>
 
       <section className="team-preview" aria-label="운영진 소개"><details><summary>운영진 소개 보기 <span>+</span></summary><div className="team-cards"><article><span>PRESIDENT</span><h3>니카 · 이나경</h3><p>회장</p></article><article><span>VICE PRESIDENT</span><h3>원디 · 이상원</h3><p>부회장</p></article></div></details></section>
