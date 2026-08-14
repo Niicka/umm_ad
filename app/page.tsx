@@ -83,6 +83,8 @@ export default function Home() {
         <div className="more-events"><b>그 외 활동들</b><span>연합 네트워킹 데이</span><span>너디너리 해커톤</span><span>UMC 해커톤</span><span>스터디</span></div>
       </section>
 
+      <section className="team-preview" aria-label="운영진 소개"><details><summary>운영진 소개 보기 <span>+</span></summary><div className="team-cards"><article><span>VICE PRESIDENT</span><h3>원디 · 이상원</h3><p>부회장</p></article><article><span>PRESIDENT</span><h3>니카 · 이나경</h3><p>회장</p></article></div></details></section>
+
       <section className="commitment">
         <p>WE ARE LOOKING FOR</p><h2>완벽한 사람보다,<br /><em>끝까지 함께할 사람.</em></h2>
         <div className="commit-grid"><article><span>01</span><h3>경험이 없어도</h3><p>전공자나 경력자만을 찾지 않습니다. 배우려는 태도와 질문할 용기를 봅니다.</p></article><article><span>02</span><h3>전공이 달라도</h3><p>문과, 이과, 공대 모두 환영합니다. 서로 다른 관점이 더 나은 서비스를 만듭니다.</p></article><article><span>03</span><h3>다만, 끝까지</h3><p>학기 중 스터디부터 겨울방학 프로젝트까지 책임 있게 달릴 수 있어야 합니다.</p></article></div>

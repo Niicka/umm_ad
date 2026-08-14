@@ -108,6 +108,7 @@ button, a, summary { -webkit-tap-highlight-color:transparent; }
 .event-body h3 { margin:0 0 10px; font-size:26px; letter-spacing:-.045em; }
 .event-body p { margin:0; max-width:560px; color:#65706c; font-size:13px; line-height:1.7; }
 .more-events { display:flex; flex-wrap:wrap; justify-content:center; gap:8px; padding-top:90px; }.more-events b { width:100%; text-align:center; margin-bottom:8px; font-size:16px; }
+.team-preview { padding:0 6vw 100px; }.team-preview details { border-top:1px solid var(--line); border-bottom:1px solid var(--line); }.team-preview summary { cursor:pointer; display:flex; justify-content:space-between; padding:24px 0; font-size:18px; font-weight:800; list-style:none; }.team-preview summary::-webkit-details-marker { display:none; }.team-cards { display:grid; grid-template-columns:repeat(2,1fr); gap:12px; padding-bottom:28px; }.team-cards article { padding:24px; background:#e8ebe5; }.team-cards span { color:#64716d; font:700 10px monospace; letter-spacing:.12em; }.team-cards h3 { margin:28px 0 8px; font-size:28px; }.team-cards p { margin:0; color:#63706b; }
 .more-events span { border:1px solid var(--line); border-radius:100px; padding:12px 18px; font-size:12px; }
 
 .commitment { padding:130px 8vw; background:var(--green); color:var(--ink); text-align:center; }
