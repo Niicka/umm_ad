@@ -25,6 +25,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Add site enhancements
+        run: sed -i 's#</head>#<script src="./updates.js"></script></head>#' github-pages/index.html
       - name: Upload site
         uses: actions/upload-pages-artifact@v3
         with:

@@ -1,6 +1,8 @@
+import CurriculumTabs from "./curriculum-tabs";
+
 const benefits = [
   { number: "01", title: "교과서 밖의 협업", body: "기획·디자인·개발이 한 팀으로 움직이며 실제 서비스가 완성되는 과정을 경험합니다." },
-  { number: "02", title: "26개 대학의 네트워크", body: "학교와 전공의 경계를 넘어 같은 목표를 가진 사람들과 만나고 오래 갈 동료를 만듭니다." },
+  { number: "02", title: "22개 대학의 네트워크", body: "학교와 전공의 경계를 넘어 같은 목표를 가진 사람들과 만나고 오래 갈 동료를 만듭니다." },
   { number: "03", title: "결과가 남는 방학", body: "10주 스터디에서 배운 것을 방학 프로젝트로 연결해 포트폴리오와 실전 경험을 함께 만듭니다." },
 ];
 
@@ -12,10 +14,10 @@ const tracks = [
 ];
 
 const events = [
-  { title: "UMC Demo Day", label: "BUILD TO SHOW", image: "/events/event-1.jpg", extraImage: "/events/event-2.jpg", body: "스터디와 프로젝트의 끝에서, 실제 사용자를 고려해 만든 서비스를 세상에 선보입니다." },
-  { title: "Sprint Review Day", label: "SHARE THE PROCESS", image: "/events/event-3.jpg", extraImage: "/events/event-6.jpg", body: "지부 프로젝트 팀들이 진행 상황과 기술적 고민, 도전과 시행착오를 공유합니다." },
-  { title: "PM Day", label: "MAKE IT BETTER", image: "/events/event-4.jpg", extraImage: "/events/event-5.jpg", body: "PM·디자이너·개발자가 모여 아이디어를 점검하고 피드백으로 프로젝트 완성도를 높입니다." },
   { title: "연합 & 학교 OT", label: "THE FIRST STEP", image: "/events/event-7.jpg", body: "UMC의 문화와 커리큘럼을 만나고, 앞으로 함께 달릴 챌린저들과 처음 연결되는 순간입니다." },
+  { title: "PM Day", label: "MAKE IT BETTER", image: "/events/event-4.jpg", extraImage: "/events/event-5.jpg", body: "PM·디자이너·개발자가 모여 아이디어를 점검하고 피드백으로 프로젝트 완성도를 높입니다." },
+  { title: "Sprint Review Day", label: "SHARE THE PROCESS", image: "/events/event-3.jpg", extraImage: "/events/event-6.jpg", body: "지부 프로젝트 팀들이 진행 상황과 기술적 고민, 도전과 시행착오를 공유합니다." },
+  { title: "UMC Demo Day", label: "BUILD TO SHOW", image: "/events/event-1.jpg", extraImage: "/events/event-2.jpg", body: "스터디와 프로젝트의 끝에서, 실제 사용자를 고려해 만든 서비스를 세상에 선보입니다." },
 ];
 
 const curriculum = [
@@ -51,7 +53,8 @@ export default function Home() {
       <section className="section about" id="about">
         <div className="section-kicker">01 / ABOUT UMC</div>
         <div className="about-grid"><h2>우리는 함께 배우고,<br />진짜 서비스를 만듭니다.</h2><div className="about-copy"><p>UMC는 대학생이 기획, 디자인, 개발을 배우고 실제 프로젝트까지 완주하는 전국 대학 연합 IT 동아리입니다.</p><p>매주 워크북과 스터디로 실력을 쌓고, 다른 학교·다른 파트의 동료들과 팀을 이루어 아이디어를 작동하는 서비스로 만듭니다.</p></div></div>
-        <div className="stats"><div><strong>26</strong><span>함께하는 대학</span></div><div><strong>10<span>주</span></strong><span>파트별 스터디</span></div><div><strong>6<span>개월</span></strong><span>배움에서 프로젝트까지</span></div><div><strong>1<span>팀</span></strong><span>전공을 넘어 완성하는 서비스</span></div></div>
+        <div className="stats"><div><strong>22</strong><span>함께하는 대학</span></div><div><strong>10<span>주</span></strong><span>파트별 스터디</span></div><div><strong>6<span>개월</span></strong><span>배움에서 프로젝트까지</span></div></div>
+        <p className="university-note">22개 참여 대학 명단은 모집 공지와 함께 안내됩니다.</p>
       </section>
 
       <section className="section benefits">
@@ -70,14 +73,14 @@ export default function Home() {
       <section className="section curriculum" id="curriculum">
         <div className="section-kicker light">04 / CURRICULUM</div>
         <div className="section-title-row light-text"><h2>10주의 배움이<br />방학의 프로젝트로.</h2><p>매주 워크북 수행과 대면 스터디,<br />그리고 인증샷으로 함께 완주합니다.</p></div>
-        <div className="curriculum-table">{curriculum.map((row) => <article key={row.week}><div className="week">{row.week}</div><h3>{row.title}</h3><div className="curr-detail"><p><b>PLAN</b>{row.plan}</p><p><b>DESIGN</b>{row.design}</p><p><b>PE</b>{row.pe}</p></div></article>)}</div>
+        <CurriculumTabs curriculum={curriculum} />
       </section>
 
       <section className="section events" id="events">
         <div className="section-kicker">05 / UMC MOMENTS</div>
         <div className="section-title-row"><h2>배움보다 오래 남는<br />우리의 순간들.</h2><p>학교 안에서 시작해 전국의 챌린저와 연결되고,<br />함께 만든 것을 무대 위에 올립니다.</p></div>
         <div className="event-grid">{events.map((event, index) => <article className={`event-card event-${index + 1}`} key={event.title}><div className={`event-image ${event.extraImage ? "dual" : ""}`}><img src={event.image} alt={`${event.title} 현장 사진 1`} loading="lazy" />{event.extraImage && <img src={event.extraImage} alt={`${event.title} 현장 사진 2`} loading="lazy" />}<span>{event.label}</span></div><div className="event-body"><span>0{index + 1}</span><div><h3>{event.title}</h3><p>{event.body}</p></div></div></article>)}</div>
-        <div className="more-events"><span>연합 네트워킹 데이</span><span>너디너리 해커톤</span><span>UMC 해커톤</span><span>스터디</span></div>
+        <div className="more-events"><b>그 외 활동들</b><span>연합 네트워킹 데이</span><span>너디너리 해커톤</span><span>UMC 해커톤</span><span>스터디</span></div>
       </section>
 
       <section className="commitment">
