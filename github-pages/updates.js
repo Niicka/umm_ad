@@ -37,7 +37,7 @@
       grid.insertAdjacentHTML('beforeend', '<article class="event-card"><div class="event-image event-extra"><span>MORE TOGETHER</span><strong>그 외 활동들</strong><p>연합 네트워킹 데이 · 너디너리 해커톤 · UMC 해커톤 · 파트 스터디</p><a href="https://www.instagram.com/uni_makeus_challenge/" target="_blank" rel="noreferrer">UMC 공식 인스타그램 보기 ↗</a></div><div class="event-body"><span>05</span><div><h3>더 넓게, 더 많이</h3><p>함께 배우고 연결되며 직접 부딪혀 성장하는 다양한 활동을 이어갑니다.</p></div></div></article>');
     }
     const commitment = document.querySelector('.commitment');
-    if (commitment) commitment.insertAdjacentHTML('beforebegin', '<section style="padding:0 6vw 100px"><details style="border-top:1px solid #07171329;border-bottom:1px solid #07171329"><summary style="cursor:pointer;display:flex;justify-content:space-between;padding:24px 0;font-size:18px;font-weight:800">운영진 소개 보기 <span>+</span></summary><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding-bottom:28px"><article style="background:#e8ebe5;padding:24px"><small>PRESIDENT</small><h3>니카 · 이나경</h3><p>회장 · 2024 ICT 창업경진대회 최우수상 · 2025 Adventure Design 2등</p></article><article style="background:#e8ebe5;padding:24px"><small>VICE PRESIDENT</small><h3>원디 · 이상원</h3><p>부회장 · UMC 9기 회장 · 서버(Node.js·Spring) 파트 수료</p></article></div></details></section>');
+    if (commitment) commitment.insertAdjacentHTML('beforebegin', '<section style="padding:0 6vw 100px"><details style="border-top:1px solid #07171329;border-bottom:1px solid #07171329"><summary style="cursor:pointer;display:flex;justify-content:space-between;padding:24px 0;font-size:18px;font-weight:800">운영진 소개 보기 <span>+</span></summary><div style="display:grid;grid-template-columns:repeat(2,1fr);gap:12px;padding-bottom:28px"><article style="background:#e8ebe5;padding:24px"><small>PRESIDENT</small><h3>니카 · 이나경</h3><p>회장</p></article><article style="background:#e8ebe5;padding:24px"><small>VICE PRESIDENT</small><h3>원디 · 이상원</h3><p>부회장</p></article></div></details></section>');
   };
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', start); else start();
   const style = document.createElement('style');
@@ -46,4 +46,7 @@
   const interactionStyle = document.createElement('style');
   interactionStyle.textContent = `.event-image img{object-fit:contain!important;background:#071713}.event-extra a{display:inline-block;width:max-content;margin-top:16px;color:#071713;background:#12e8a5;padding:10px 12px;font-size:12px;font-weight:800}.benefit-list article{min-height:94px!important;transition:min-height .25s,background .25s!important}.benefit-list article:hover{min-height:150px!important}.benefit-list p{max-height:0;opacity:0;overflow:hidden;transition:.25s}.benefit-list article:hover p{max-height:80px;opacity:1}`;
   document.head.append(interactionStyle);
+  const headlineStyle = document.createElement('style');
+  headlineStyle.textContent = `.hero-content{max-width:1200px!important}.hero h1 strong{display:inline-block;white-space:nowrap;font-size:clamp(48px,6.4vw,112px)}@media(max-width:900px){.hero h1 strong{white-space:normal;font-size:inherit}}`;
+  document.head.append(headlineStyle);
 })();

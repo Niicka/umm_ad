@@ -83,7 +83,7 @@ export default function Home() {
         <div className="more-events"><b>그 외 활동들</b><span>연합 네트워킹 데이</span><span>너디너리 해커톤</span><span>UMC 해커톤</span><span>스터디</span><a href="https://www.instagram.com/uni_makeus_challenge/" target="_blank" rel="noreferrer">UMC 공식 인스타그램 보기 ↗</a></div>
       </section>
 
-      <section className="team-preview" aria-label="운영진 소개"><details><summary>운영진 소개 보기 <span>+</span></summary><div className="team-cards"><article><span>PRESIDENT</span><h3>니카 · 이나경</h3><p>회장 · 2024 ICT 창업경진대회 최우수상 · 2025 Adventure Design 2등</p></article><article><span>VICE PRESIDENT</span><h3>원디 · 이상원</h3><p>부회장 · UMC 9기 회장 · 서버(Node.js·Spring) 파트 수료</p></article></div></details></section>
+      <section className="team-preview" aria-label="운영진 소개"><details><summary>운영진 소개 보기 <span>+</span></summary><div className="team-cards"><article><span>PRESIDENT</span><h3>니카 · 이나경</h3><p>회장</p></article><article><span>VICE PRESIDENT</span><h3>원디 · 이상원</h3><p>부회장</p></article></div></details></section>
 
       <section className="commitment">
         <p>WE ARE LOOKING FOR</p><h2>완벽한 사람보다,<br /><em>끝까지 함께할 사람.</em></h2>
