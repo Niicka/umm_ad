@@ -95,7 +95,7 @@ export default function Home() {
         <div className="recruit-layout"><div className="recruit-title"><p>UMC KAU 11TH</p><h2>우리의 다음 장면에<br />당신을 초대합니다.</h2><span>지원 링크는 모집 시작과 함께 열립니다.</span></div><div className="schedule">
           <article className="active"><span>01</span><div><p>서류 모집</p><b>08.17 — 09.04</b></div><em>08.17 OPEN</em></article><article><span>02</span><div><p>면접</p><b>09.05 — 09.06</b></div></article><article><span>03</span><div><p>최종 결과 발표</p><b>09.07</b></div></article><article><span>04</span><div><p>연합 OT</p><b>09.11 · 18:00</b></div><em>필수</em></article><article><span>05</span><div><p>학교 OT</p><b>09.11 · 19:00</b></div><em>필수</em></article>
         </div></div>
-        <div className="info-cards"><article><span>활동 기간</span><strong>2026.09 — 2027.02</strong><p>학기 스터디 + 겨울방학 프로젝트</p></article><article><span>동아리 회비</span><strong>35,000원</strong><p>프로젝트 참가 시 30,000원 별도</p></article><article><span>지원 조건</span><strong>학과 · 경험 무관</strong><p>겨울방학까지 책임 있게 참여 가능한 분</p></article></div>
+        <div className="info-cards"><article><span>활동 기간</span><strong>2026.09 — 2027.02</strong><p>학기 스터디 + 겨울방학 프로젝트</p></article><article><span>동아리 회비</span><strong>35,000원</strong><p>프로젝트 참가 시 30,000원 별도</p></article><article><span>지원 조건</span><strong>한국항공대학교 학생</strong><p>재학생 · 휴학생 모두 가능 · 학과 및 경험 무관</p></article></div>
       </section>
 
       <section className="section faq" id="faq">
