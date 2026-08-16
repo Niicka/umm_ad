@@ -68,7 +68,7 @@ export default function Home() {
 
       <section className="section parts" id="parts">
         <div className="section-kicker">03 / FIND YOUR PART</div>
-        <div className="section-title-row"><h2>각자의 강점으로,<br />하나의 서비스를.</h2><p>잘하는 것이 아직 없어도 괜찮아요.<br />해보고 싶은 역할에서 시작하세요.</p></div>
+        <div className="section-title-row"><h2>각자의 강점으로,<br />하나의 서비스를.</h2></div>
         <div className="track-grid">{tracks.map((track, index) => <article className="track-card" key={track.key}><div className="track-top"><span>0{index + 1}</span><b>{track.key}</b></div><h3>{track.title}</h3><p>{track.desc}</p><div className="tags">{track.tags.map(tag => <span key={tag}>{tag}</span>)}</div></article>)}</div>
         <p className="infra-note"><b>+ Infra 심화</b> PE 트랙 수료자 중 희망자는 8–10주차에 별도 심화 워크북을 선택할 수 있습니다.</p>
       </section>

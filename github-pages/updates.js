@@ -33,6 +33,7 @@
     }
     const networkBenefit = document.querySelector('.benefit-list article:nth-child(2) h3');
     if (networkBenefit) networkBenefit.textContent = '22개 대학의 네트워크';
+    document.querySelector('.parts .section-title-row p')?.remove();
     const eligibility = document.querySelector('.info-cards article:last-child');
     if (eligibility) {
       eligibility.querySelector('strong').textContent = '한국항공대학교 학생';
