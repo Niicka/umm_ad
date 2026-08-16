@@ -31,6 +31,8 @@
       stats.innerHTML = '<div><strong>22</strong><span>함께하는 대학</span></div><div><strong>10<span>주</span></strong><span>파트별 스터디</span></div><div><strong>6<span>개월</span></strong><span>배움에서 프로젝트까지</span></div>';
       stats.insertAdjacentHTML('afterend', `<details class="university-list"><summary>함께하는 22개 대학 보기 <span>+</span></summary><div>${universities.map(x => `<span>${x}</span>`).join('')}</div></details>`);
     }
+    const networkBenefit = document.querySelector('.benefit-list article:nth-child(2) h3');
+    if (networkBenefit) networkBenefit.textContent = '22개 대학의 네트워크';
     const eligibility = document.querySelector('.info-cards article:last-child');
     if (eligibility) {
       eligibility.querySelector('strong').textContent = '한국항공대학교 학생';
