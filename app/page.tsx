@@ -21,7 +21,7 @@ const events = [
 ];
 
 const studyPhotos = ["study-1.jpg", "study-2.jpg", "study-3.png", "study-4.png", "study-5.jpg", "study-6.jpg"];
-const applicationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSf7BD7H9cX7e-xVDxzESZEEZbFypeeamTT4qn4_bgBwI06mVQ/viewform?usp=dialog";
+const applicationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSd7yUFp1ZFbJREAZEx1l6ap0ZEb_bhcFazSyGhoWHfIFFL8vA/viewform?usp=dialog";
 
 const curriculum = [
   { week: "01–03", title: "기초를 단단하게", plan: "서비스 기획 입문 · 문제 정의 · 리서치", design: "Figma · UI 디자인 · Pain Point", pe: "데이터 모델링 · UI 기초 · 개발 환경" },

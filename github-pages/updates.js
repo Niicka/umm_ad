@@ -3,7 +3,7 @@
     const hero = document.querySelector('.hero h1');
     if (hero) hero.innerHTML = '경험을 쌓고,<br><strong>함께 성장할 사람.</strong>';
 
-    const applicationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSf7BD7H9cX7e-xVDxzESZEEZbFypeeamTT4qn4_bgBwI06mVQ/viewform?usp=dialog';
+    const applicationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSd7yUFp1ZFbJREAZEx1l6ap0ZEb_bhcFazSyGhoWHfIFFL8vA/viewform?usp=dialog';
     document.querySelectorAll('.nav-cta, .hero-actions .primary, .apply-button').forEach(link => {
       link.href = applicationUrl;
       link.target = '_blank';
