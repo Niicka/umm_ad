@@ -1,7 +1,7 @@
 (() => {
   const start = () => {
     const hero = document.querySelector('.hero h1');
-    if (hero) hero.innerHTML = '경험보다,<br><strong>끝까지 함께 달릴 사람.</strong>';
+    if (hero) hero.innerHTML = '경험을 쌓고,<br><strong>함께 성장할 사람.</strong>';
 
     const applicationUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSf7BD7H9cX7e-xVDxzESZEEZbFypeeamTT4qn4_bgBwI06mVQ/viewform?usp=dialog';
     document.querySelectorAll('.nav-cta, .hero-actions .primary, .apply-button').forEach(link => {
@@ -64,7 +64,7 @@
     if (grid) {
       const cards = [...grid.children];
       [cards[3], cards[2], cards[1], cards[0]].forEach((card,i) => { card.querySelector('.event-body > span').textContent = `0${i+1}`; grid.append(card); });
-      grid.insertAdjacentHTML('beforeend', '<article class="event-card"><div class="event-image event-extra"><span>MORE TOGETHER</span><strong>그 외 활동들</strong><p>연합 네트워킹 데이 · 너디너리 해커톤 · UMC 해커톤 · 파트 스터디</p><a href="https://www.instagram.com/uni_makeus_challenge/" target="_blank" rel="noreferrer">UMC 공식 인스타그램 보기 ↗</a><a href="https://www.instagram.com/kau_makeus_challenge/" target="_blank" rel="noreferrer">한국항공대학교 UMC 인스타그램 ↗</a><div class="study-mini"><img src="./study/study-1.jpg" alt="UMC 스터디 현장 1"><img src="./study/study-2.jpg" alt="UMC 스터디 현장 2"><img src="./study/study-3.png" alt="UMC 스터디 현장 3"><img src="./study/study-4.png" alt="UMC 스터디 현장 4"><img src="./study/study-5.jpg" alt="UMC 스터디 현장 5"><img src="./study/study-6.jpg" alt="UMC 스터디 현장 6"></div></div><div class="event-body"><span>05</span><div><h3>더 넓게, 더 많이</h3><p>함께 배우고 연결되며 직접 부딪혀 성장하는 다양한 활동을 이어갑니다.</p></div></div></article>');
+      grid.insertAdjacentHTML('beforeend', '<article class="event-card"><div class="event-image event-extra"><span>STUDY TOGETHER</span><strong>스터디</strong><p>함께 배우고, 질문하고, 성장하는 매주 한 번의 시간입니다.</p><div class="study-mini"><img src="./study/study-1.jpg" alt="UMC 스터디 현장 1"><img src="./study/study-2.jpg" alt="UMC 스터디 현장 2"><img src="./study/study-3.png" alt="UMC 스터디 현장 3"><img src="./study/study-4.png" alt="UMC 스터디 현장 4"><img src="./study/study-5.jpg" alt="UMC 스터디 현장 5"><img src="./study/study-6.jpg" alt="UMC 스터디 현장 6"></div></div><div class="event-body"><span>05</span><div><h3>스터디</h3><p>같은 목표를 가진 동료들과 배움을 쌓고 서로의 과정을 나눕니다.</p></div></div></article><article class="event-card"><div class="event-image event-extra"><span>MORE TOGETHER</span><strong>그 외 활동들</strong><p>연합 네트워킹 데이, 너디너리 해커톤, UMC 해커톤 등 다양한 경험으로 더 넓게 연결됩니다.</p><a href="https://www.instagram.com/uni_makeus_challenge/" target="_blank" rel="noreferrer">UMC 공식 인스타그램 보기 ↗</a><a href="https://www.instagram.com/kau_makeus_challenge/" target="_blank" rel="noreferrer">한국항공대학교 UMC 인스타그램 ↗</a></div><div class="event-body"><span>06</span><div><h3>그 외 활동들</h3><p>함께 배우고 연결되며 직접 부딪혀 성장하는 다양한 활동을 이어갑니다.</p></div></div></article>');
     }
     const commitment = document.querySelector('.commitment');
     if (commitment) {

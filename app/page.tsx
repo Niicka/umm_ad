@@ -43,7 +43,7 @@ export default function Home() {
         <div className="hero-orb orb-one" /><div className="hero-orb orb-two" />
         <div className="hero-content">
           <p className="eyebrow"><span /> KOREA AEROSPACE UNIVERSITY · 11TH</p>
-          <h1>경험보다,<br /><strong>끝까지 달릴 사람.</strong></h1>
+          <h1>경험을 쌓고,<br /><strong>함께 성장할 사람.</strong></h1>
           <p className="hero-copy">전공도, 시작점도 상관없어요.<br />이번 학기와 겨울방학을 뜨겁게 채울 열정이면 충분합니다.</p>
           <div className="hero-actions"><a className="button primary" href={applicationUrl} target="_blank" rel="noreferrer">구글폼으로 지원하기 <span>↗</span></a><a className="text-link" href="#about">UMC 더 알아보기 <span>↘</span></a></div>
         </div>
@@ -82,9 +82,10 @@ export default function Home() {
       <section className="section events" id="events">
         <div className="section-kicker">05 / UMC MOMENTS</div>
         <div className="section-title-row"><h2>배움보다 오래 남는<br />우리의 순간들.</h2><p>학교 안에서 시작해 전국의 챌린저와 연결되고,<br />함께 만든 것을 무대 위에 올립니다.</p></div>
-        <div className="event-grid">{events.map((event, index) => <article className={`event-card event-${index + 1}`} key={event.title}><div className={`event-image ${event.extraImage ? "dual" : ""}`}><img src={event.image} alt={`${event.title} 현장 사진 1`} loading="lazy" />{event.extraImage && <img src={event.extraImage} alt={`${event.title} 현장 사진 2`} loading="lazy" />}<span>{event.label}</span></div><div className="event-body"><span>0{index + 1}</span><div><h3>{event.title}</h3><p>{event.body}</p></div></div></article>)}</div>
-        <div className="more-events"><b>그 외 활동들</b><span>연합 네트워킹 데이</span><span>너디너리 해커톤</span><span>UMC 해커톤</span><span>스터디</span><a href="https://www.instagram.com/uni_makeus_challenge/" target="_blank" rel="noreferrer">UMC 공식 인스타그램 보기 ↗</a><a href="https://www.instagram.com/kau_makeus_challenge/" target="_blank" rel="noreferrer">한국항공대학교 UMC 인스타그램 ↗</a></div>
-        <div className="study-gallery" aria-label="UMC 스터디 현장">{studyPhotos.map((photo, index) => <img key={photo} src={`/study/${photo}`} alt={`UMC 스터디 현장 ${index + 1}`} loading="lazy" />)}</div>
+        <div className="event-grid">{events.map((event, index) => <article className={`event-card event-${index + 1}`} key={event.title}><div className={`event-image ${event.extraImage ? "dual" : ""}`}><img src={event.image} alt={`${event.title} 현장 사진 1`} loading="lazy" />{event.extraImage && <img src={event.extraImage} alt={`${event.title} 현장 사진 2`} loading="lazy" />}<span>{event.label}</span></div><div className="event-body"><span>0{index + 1}</span><div><h3>{event.title}</h3><p>{event.body}</p></div></div></article>)}
+          <article className="event-card"><div className="event-image event-extra"><span>STUDY TOGETHER</span><strong>스터디</strong><p>함께 배우고, 질문하고, 성장하는 매주 한 번의 시간입니다.</p><div className="study-mini" aria-label="UMC 스터디 현장">{studyPhotos.map((photo, index) => <img key={photo} src={`/study/${photo}`} alt={`UMC 스터디 현장 ${index + 1}`} loading="lazy" />)}</div></div><div className="event-body"><span>05</span><div><h3>스터디</h3><p>같은 목표를 가진 동료들과 배움을 쌓고 서로의 과정을 나눕니다.</p></div></div></article>
+          <article className="event-card"><div className="event-image event-extra"><span>MORE TOGETHER</span><strong>그 외 활동들</strong><p>연합 네트워킹 데이, 너디너리 해커톤, UMC 해커톤 등 다양한 경험으로 더 넓게 연결됩니다.</p><a href="https://www.instagram.com/uni_makeus_challenge/" target="_blank" rel="noreferrer">UMC 공식 인스타그램 보기 ↗</a><a href="https://www.instagram.com/kau_makeus_challenge/" target="_blank" rel="noreferrer">한국항공대학교 UMC 인스타그램 ↗</a></div><div className="event-body"><span>06</span><div><h3>그 외 활동들</h3><p>함께 배우고 연결되며 직접 부딪혀 성장하는 다양한 활동을 이어갑니다.</p></div></div></article>
+        </div>
       </section>
 
       <section className="team-preview" aria-label="운영진 소개"><details><summary>운영진 소개 보기 <span>+</span></summary><div className="team-cards"><article><span>PRESIDENT</span><h3>니카 · 이나경</h3><p>회장 · 한국항공대학교 소프트웨어학과 24학번</p></article><article><span>VICE PRESIDENT</span><h3>원디 · 이상원</h3><p>부회장 · 한국항공대학교 소프트웨어학과 21학번</p></article></div></details></section>
