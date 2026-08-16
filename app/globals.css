@@ -91,7 +91,7 @@ button, a, summary { -webkit-tap-highlight-color:transparent; }
 .curriculum-table article { display:grid; grid-template-columns:120px .7fr 1.6fr; align-items:start; gap:3vw; padding:32px 0; border-bottom:1px solid rgba(255,255,255,.16); }
 .week { color:var(--green); font:700 12px monospace; }
 .curriculum-table h3 { margin:0; font-size:22px; letter-spacing:-.04em; }
-.tab-list { display:flex; gap:8px; margin:0 0 28px; }.tab-list button { cursor:pointer; border:1px solid rgba(255,255,255,.28); border-radius:999px; color:rgba(255,255,255,.7); padding:10px 18px; font:700 11px monospace; }.tab-list button.active { background:var(--green); border-color:var(--green); color:var(--ink); }.curriculum-description { margin:0; color:rgba(255,255,255,.65); font-size:14px; line-height:1.7; }.curriculum-description b { display:block; color:var(--green); font:700 9px monospace; letter-spacing:.14em; margin-bottom:8px; }
+.tab-list { display:flex; flex-wrap:wrap; gap:8px; margin:0 0 28px; }.tab-list button { cursor:pointer; border:1px solid rgba(255,255,255,.28); border-radius:999px; color:rgba(255,255,255,.7); padding:10px 18px; font:700 11px monospace; }.tab-list button.active { background:var(--green); border-color:var(--green); color:var(--ink); }.curriculum-description { margin:0; color:rgba(255,255,255,.65); font-size:14px; line-height:1.7; }.curriculum-description b { display:block; color:var(--green); font:700 9px monospace; letter-spacing:.14em; margin-bottom:8px; }
 .curr-detail { display:grid; grid-template-columns:repeat(3,1fr); gap:24px; }
 .curr-detail p { margin:0; color:rgba(255,255,255,.54); font-size:12px; line-height:1.55; }
 .curr-detail b { display:block; color:white; font:700 9px monospace; letter-spacing:.14em; margin-bottom:8px; }

@@ -9,8 +9,8 @@ const benefits = [
 const tracks = [
   { key: "PLAN", title: "Plan", desc: "문제 발견부터 서비스 전략과 화면 설계까지", tags: ["리서치", "UX", "기획 문서", "PM"] },
   { key: "DESIGN", title: "Design", desc: "사용자 경험을 시각 언어와 프로토타입으로", tags: ["Figma", "UI", "디자인 시스템", "Prototype"] },
-  { key: "WEB", title: "PE · Web", desc: "프론트엔드와 백엔드를 오가며 웹 서비스를 끝까지", tags: ["React", "Next.js", "API", "Database"] },
-  { key: "MOBILE", title: "PE · Mobile", desc: "사용자의 손안에서 동작하는 모바일 제품을", tags: ["Flutter", "UI", "API", "Deploy"] },
+  { key: "WEB", title: "Product Engineering · Web", desc: "프론트엔드와 백엔드를 오가며 웹 서비스를 끝까지", tags: ["React", "Next.js", "API", "Database"] },
+  { key: "MOBILE", title: "Product Engineering · Mobile", desc: "사용자의 손안에서 동작하는 모바일 제품을", tags: ["Flutter", "UI", "API", "Deploy"] },
 ];
 
 const events = [
@@ -70,7 +70,7 @@ export default function Home() {
         <div className="section-kicker">03 / FIND YOUR PART</div>
         <div className="section-title-row"><h2>각자의 강점으로,<br />하나의 서비스를.</h2></div>
         <div className="track-grid">{tracks.map((track, index) => <article className="track-card" key={track.key}><div className="track-top"><span>0{index + 1}</span><b>{track.key}</b></div><h3>{track.title}</h3><p>{track.desc}</p><div className="tags">{track.tags.map(tag => <span key={tag}>{tag}</span>)}</div></article>)}</div>
-        <p className="infra-note"><b>+ Infra 심화</b> PE 트랙 수료자 중 희망자는 8–10주차에 별도 심화 워크북을 선택할 수 있습니다.</p>
+        <p className="infra-note"><b>+ Infra 심화</b> Product Engineering 트랙 수료자 중 희망자는 8–10주차에 별도 심화 워크북을 선택할 수 있습니다.</p>
       </section>
 
       <section className="section curriculum" id="curriculum">

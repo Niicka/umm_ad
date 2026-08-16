@@ -45,8 +45,8 @@
       const tracks = {
         'Plan': ['Chapter 0. 서비스 기획 입문','Chapter 1. 문제 정의와 리서치 (1)','Chapter 2. 문제 정의와 리서치 (2)','Chapter 3. 서비스 정의와 비즈니스 모델링','Chapter 4. 기획 산출물 (1) UX 설계','Chapter 5. 기획 산출물 (2) 상세 기능 정의','Chapter 6. 기획 산출물 (3) 기획 문서 작성','Chapter 7. 기획 산출물 (4) 화면 설계','Chapter 8. 프로젝트 관리 및 협업','Chapter 9. 서비스 품질 검증','Chapter 10. 그로스 전략 설계'],
         'Design': ['Chapter 0. 피그마 기초 학습','Chapter 1. UI 디자인 입문: 클론 디자인 App & Web','Chapter 2. 리디자인: Pain Point 분석','Chapter 3. 리디자인: Solution 탐구','Chapter 4. 와이어프레임 & 디자인 시스템 구축','Chapter 5. UI 디자인 진행','Chapter 6. UI 디자인 확장 & 포트폴리오 제작','Chapter 7. 프로토타입 제작 & 복습 가이드','Chapter 8. 매칭 프로젝트 디자인 (1)','Chapter 9. 매칭 프로젝트 디자인 (2)','Chapter 10. 매칭 프로젝트 디자인 (3)','Appendix 1. 협업 가이드','Appendix 2. 디자인 인사이트'],
-        'PE · Web': ['1주차 · 데이터 모델링과 타입 시스템 기초','2주차 · SQL 데이터 조작과 React UI 기초','3주차 · 서버 환경 세팅과 웹 화면 라우팅','4주차 · ORM 기반 CRUD와 클라이언트 상태 관리','5주차 · Public API 구축과 웹 API 연동','6주차 · CRUD API와 서버 상태 관리','7주차 · JWT 인증/인가와 사용자 인증 연동','8주차 · 핵심 비즈니스 로직과 사용자 기능 연동','9주차 · API 안정화와 Next.js 웹 개발','10주차 · 운영 환경 분리와 웹 서비스 배포'],
-        'PE · Mobile': ['1주차 · 데이터 모델링과 앱 UI 기초','2주차 · SQL 데이터 조작과 사용자 입력 폼','3주차 · 서버 환경 세팅과 앱 화면 내비게이션','4주차 · ORM 기반 CRUD와 비동기 UI 처리','5주차 · Public API 설계와 앱 아키텍처 정립','6주차 · CRUD API 구축과 네트워크 통신','7주차 · JWT 인증/인가와 사용자 토큰 관리','8주차 · 핵심 비즈니스 로직과 데이터 상태 관리','9주차 · API 명세 확정과 심화 기능 연동','10주차 · 클라우드 환경 분리 배포와 앱 출시'],
+        'Product Engineering · Web': ['1주차 · 데이터 모델링과 타입 시스템 기초','2주차 · SQL 데이터 조작과 React UI 기초','3주차 · 서버 환경 세팅과 웹 화면 라우팅','4주차 · ORM 기반 CRUD와 클라이언트 상태 관리','5주차 · Public API 구축과 웹 API 연동','6주차 · CRUD API와 서버 상태 관리','7주차 · JWT 인증/인가와 사용자 인증 연동','8주차 · 핵심 비즈니스 로직과 사용자 기능 연동','9주차 · API 안정화와 Next.js 웹 개발','10주차 · 운영 환경 분리와 웹 서비스 배포'],
+        'Product Engineering · Mobile': ['1주차 · 데이터 모델링과 앱 UI 기초','2주차 · SQL 데이터 조작과 사용자 입력 폼','3주차 · 서버 환경 세팅과 앱 화면 내비게이션','4주차 · ORM 기반 CRUD와 비동기 UI 처리','5주차 · Public API 설계와 앱 아키텍처 정립','6주차 · CRUD API 구축과 네트워크 통신','7주차 · JWT 인증/인가와 사용자 토큰 관리','8주차 · 핵심 비즈니스 로직과 데이터 상태 관리','9주차 · API 명세 확정과 심화 기능 연동','10주차 · 클라우드 환경 분리 배포와 앱 출시'],
         'Infra': ['1주차 · 신뢰할 수 있는 배포 파이프라인','2주차 · 관측 가능한 시스템 만들기','3주차 · 장애를 견디는 시스템 만들기']
       };
       curriculum.insertAdjacentHTML('beforebegin', `<div class="curriculum-tabs">${Object.keys(tracks).map((x,i) => `<button class="${i ? '' : 'active'}">${x}</button>`).join('')}</div>`);
@@ -54,6 +54,11 @@
       document.querySelectorAll('.curriculum-tabs button').forEach(button => button.onclick = () => { document.querySelectorAll('.curriculum-tabs button').forEach(x => x.classList.toggle('active', x === button)); render(button.textContent); });
       render('Plan');
     }
+    document.querySelectorAll('.track-card h3').forEach((title) => {
+      title.textContent = title.textContent.replace('PE ·', 'Product Engineering ·');
+    });
+    const infraNote = document.querySelector('.infra-note');
+    if (infraNote) infraNote.innerHTML = '<b>+ Infra 심화</b> Product Engineering 트랙 수료자 중 희망자는 8–10주차에 별도 심화 워크북을 선택할 수 있습니다.';
 
     const grid = document.querySelector('.event-grid');
     if (grid) {

@@ -5,7 +5,7 @@ import { useState } from "react";
 type Row = { week: string; title: string; plan: string; design: string; pe: string };
 type Track = "plan" | "design" | "pe";
 
-const labels: Record<Track, string> = { plan: "PLAN", design: "DESIGN", pe: "PE" };
+const labels: Record<Track, string> = { plan: "PLAN", design: "DESIGN", pe: "PRODUCT ENGINEERING" };
 
 export default function CurriculumTabs({ curriculum }: { curriculum: Row[] }) {
   const [selected, setSelected] = useState<Track>("plan");
