@@ -21,6 +21,7 @@ const events = [
 ];
 
 const studyPhotos = ["study-1.jpg", "study-2.jpg", "study-3.png", "study-4.png", "study-5.jpg", "study-6.jpg"];
+const applicationUrl = "https://docs.google.com/forms/d/e/1FAIpQLSf7BD7H9cX7e-xVDxzESZEEZbFypeeamTT4qn4_bgBwI06mVQ/viewform?usp=dialog";
 
 const curriculum = [
   { week: "01–03", title: "기초를 단단하게", plan: "서비스 기획 입문 · 문제 정의 · 리서치", design: "Figma · UI 디자인 · Pain Point", pe: "데이터 모델링 · UI 기초 · 개발 환경" },
@@ -35,7 +36,7 @@ export default function Home() {
       <header className="topbar">
         <a className="brand" href="#top" aria-label="UMC KAU 홈"><span className="brand-mark">U</span><span>UMC</span><em>KAU</em></a>
         <nav aria-label="주요 메뉴"><a href="#about">소개</a><a href="#parts">파트</a><a href="#events">활동</a><a href="#recruit">모집안내</a></nav>
-        <a className="nav-cta" href="#apply">지원하기 <span>↗</span></a>
+        <a className="nav-cta" href={applicationUrl} target="_blank" rel="noreferrer">지원하기 <span>↗</span></a>
       </header>
 
       <section className="hero" id="top">
@@ -44,9 +45,9 @@ export default function Home() {
           <p className="eyebrow"><span /> KOREA AEROSPACE UNIVERSITY · 11TH</p>
           <h1>경험보다,<br /><strong>끝까지 달릴 사람.</strong></h1>
           <p className="hero-copy">전공도, 시작점도 상관없어요.<br />이번 학기와 겨울방학을 뜨겁게 채울 열정이면 충분합니다.</p>
-          <div className="hero-actions"><a className="button primary" href="#recruit">11기 모집 안내 <span>↓</span></a><a className="text-link" href="#about">UMC 더 알아보기 <span>↘</span></a></div>
+          <div className="hero-actions"><a className="button primary" href={applicationUrl} target="_blank" rel="noreferrer">구글폼으로 지원하기 <span>↗</span></a><a className="text-link" href="#about">UMC 더 알아보기 <span>↘</span></a></div>
         </div>
-        <div className="hero-meta"><div><b>08.17 — 09.04</b><span>서류 모집</span></div><div><b>6 MONTHS</b><span>26.09 — 27.02</span></div><div><b>NO LIMITS</b><span>전공 · 경험 무관</span></div></div>
+        <div className="hero-meta"><div><b>09.04 · 18:00까지</b><span>서류 모집 중</span></div><div><b>6 MONTHS</b><span>26.09 — 27.02</span></div><div><b>NO LIMITS</b><span>전공 · 경험 무관</span></div></div>
         <p className="scroll-note">SCROLL TO EXPLORE <span>↓</span></p>
       </section>
 
@@ -86,17 +87,18 @@ export default function Home() {
         <div className="study-gallery" aria-label="UMC 스터디 현장">{studyPhotos.map((photo, index) => <img key={photo} src={`/study/${photo}`} alt={`UMC 스터디 현장 ${index + 1}`} loading="lazy" />)}</div>
       </section>
 
-      <section className="team-preview" aria-label="운영진 소개"><details><summary>운영진 소개 보기 <span>+</span></summary><div className="team-cards"><article><span>PRESIDENT</span><h3>니카 · 이나경</h3><p>회장</p></article><article><span>VICE PRESIDENT</span><h3>원디 · 이상원</h3><p>부회장</p></article></div></details></section>
+      <section className="team-preview" aria-label="운영진 소개"><details><summary>운영진 소개 보기 <span>+</span></summary><div className="team-cards"><article><span>PRESIDENT</span><h3>니카 · 이나경</h3><p>회장 · 한국항공대학교 소프트웨어학과 24학번</p></article><article><span>VICE PRESIDENT</span><h3>원디 · 이상원</h3><p>부회장 · 한국항공대학교 소프트웨어학과 21학번</p></article></div></details></section>
 
       <section className="commitment">
         <p>WE ARE LOOKING FOR</p><h2>완벽한 사람보다,<br /><em>끝까지 함께할 사람.</em></h2>
-        <div className="commit-grid"><article><span>01</span><h3>경험이 없어도</h3><p>전공자나 경력자만을 찾지 않습니다. 배우려는 태도와 질문할 용기를 봅니다.</p></article><article><span>02</span><h3>전공이 달라도</h3><p>문과, 이과, 공대 모두 환영합니다. 서로 다른 관점이 더 나은 서비스를 만듭니다.</p></article><article><span>03</span><h3>다만, 끝까지</h3><p>학기 중 스터디부터 겨울방학 프로젝트까지 책임 있게 달릴 수 있어야 합니다.</p></article></div>
+        <p className="commitment-intro">공대에만 구애받지 않습니다. 내 아이디어로 IT 창업을 꿈꾸는 PM부터<br />앱·웹을 만들고 싶은 개발자, 디자인을 경험하고 싶은 분까지 모두 환영합니다.</p>
+        <div className="commit-grid"><article><span>01</span><h3>아이디어를 현실로</h3><p>내 아이디어로 IT 창업을 해보고 싶거나, 서비스의 방향을 이끌어 보고 싶은 PM을 찾습니다.</p></article><article><span>02</span><h3>직접 만들어 보고 싶다면</h3><p>코딩으로 앱과 웹 서비스를 만들고, 사용자에게 닿는 결과물을 완성해 보고 싶은 분을 기다립니다.</p></article><article><span>03</span><h3>새로운 경험이 필요하다면</h3><p>웹·앱 디자인을 해보고 싶거나, 의미 있는 대외활동 경험과 함께할 동료를 찾는 분도 환영합니다.</p></article></div>
       </section>
 
       <section className="section recruit" id="recruit">
         <div className="section-kicker">06 / RECRUITMENT</div>
-        <div className="recruit-layout"><div className="recruit-title"><p>UMC KAU 11TH</p><h2>우리의 다음 장면에<br />당신을 초대합니다.</h2><span>지원 링크는 모집 시작과 함께 열립니다.</span></div><div className="schedule">
-          <article className="active"><span>01</span><div><p>서류 모집</p><b>08.17 — 09.04</b></div><em>08.17 OPEN</em></article><article><span>02</span><div><p>면접</p><b>09.05 — 09.06</b></div></article><article><span>03</span><div><p>최종 결과 발표</p><b>09.07</b></div></article><article><span>04</span><div><p>연합 OT</p><b>09.11 · 18:00</b></div><em>필수</em></article><article><span>05</span><div><p>학교 OT</p><b>09.11 · 19:00</b></div><em>필수</em></article>
+        <div className="recruit-layout"><div className="recruit-title"><p>UMC KAU 11TH</p><h2>우리의 다음 장면에<br />당신을 초대합니다.</h2><span>모집 중 · 09.04 18:00까지 지원을 받습니다.</span></div><div className="schedule">
+          <article className="active"><span>01</span><div><p>서류 모집</p><b>09.04 · 18:00까지</b></div><em>모집 중</em></article><article><span>02</span><div><p>면접</p><b>09.05 — 09.06</b></div></article><article><span>03</span><div><p>최종 결과 발표</p><b>09.07</b></div></article><article><span>04</span><div><p>연합 OT</p><b>09.11 · 18:00</b></div><em>필수</em></article><article><span>05</span><div><p>학교 OT</p><b>09.11 · 19:00</b></div><em>필수</em></article>
         </div></div>
         <div className="info-cards"><article><span>활동 기간</span><strong>2026.09 — 2027.02</strong><p>학기 스터디 + 겨울방학 프로젝트</p></article><article><span>동아리 회비</span><strong>35,000원</strong><p>프로젝트 참가 시 30,000원 별도</p></article><article><span>지원 조건</span><strong>한국항공대학교 학생</strong><p>재학생 · 휴학생 모두 가능 · 학과 및 경험 무관</p></article></div>
       </section>
@@ -111,7 +113,7 @@ export default function Home() {
         </div></div>
       </section>
 
-      <section className="apply" id="apply"><div className="apply-glow" /><p>UMC KAU 11TH RECRUITING</p><h2>이번 겨울,<br />무엇을 남기고 싶나요?</h2><a className="button apply-button" href="#recruit">모집 일정 확인하기 <span>↗</span></a><small>APPLICATION LINK · COMING SOON</small></section>
+      <section className="apply" id="apply"><div className="apply-glow" /><p>UMC KAU 11TH RECRUITING</p><h2>이번 겨울,<br />무엇을 남기고 싶나요?</h2><a className="button apply-button" href={applicationUrl} target="_blank" rel="noreferrer">구글폼으로 지원하기 <span>↗</span></a><small>APPLICATION OPEN · 09.04 18:00까지</small></section>
       <footer><div className="brand footer-brand"><span className="brand-mark">U</span><span>UMC</span><em>KAU</em></div><p>University MakeUs Challenge · Korea Aerospace University</p><div><a href="#top">TOP ↑</a></div></footer>
     </main>
   );
