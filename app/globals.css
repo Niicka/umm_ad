@@ -99,7 +99,7 @@ button, a, summary { -webkit-tap-highlight-color:transparent; }
 .event-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:70px 4vw; align-items:start; }
 .event-card:nth-child(even) { margin-top:0; }
 .event-image { position:relative; overflow:hidden; background:#dde2dd; aspect-ratio:4/3; }
-.event-image img { width:100%; height:100%; object-fit:cover; background:#071713; filter:saturate(.85) contrast(1.02); transition:transform .6s; }
+.event-image img { width:100%; height:100%; object-fit:contain; background:#071713; filter:saturate(.85) contrast(1.02); transition:transform .6s; }
 .event-image.dual { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:3px; }
 .event-image.dual img { min-width:0; }
 .event-card:hover img { transform:scale(1.03); }
