@@ -102,6 +102,8 @@ button, a, summary { -webkit-tap-highlight-color:transparent; }
 .event-image img { width:100%; height:100%; object-fit:contain; background:#071713; filter:saturate(.85) contrast(1.02); transition:transform .6s; }
 .event-image.dual { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:3px; }
 .event-image.dual img { min-width:0; }
+.event-image.triple { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:3px; }
+.event-image.triple img { min-width:0; }
 .event-card:hover img { transform:scale(1.03); }
 .event-image>span { position:absolute; top:16px; left:16px; color:white; background:rgba(7,23,19,.82); padding:8px 11px; font:700 9px monospace; letter-spacing:.12em; }
 .event-extra { display:flex; flex-direction:column; justify-content:flex-end; min-height:560px; aspect-ratio:auto; padding:28px; background:linear-gradient(135deg,#082b24,#0b7a60); color:white; }
